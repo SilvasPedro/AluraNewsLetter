@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --alura-escuro: #021017;
+    --alura-medio: #084563;
+    --alura-claro: #d7f9ff;
+    --alura-claro-2: #d7f3ff;
+    --alura-verde: #2bfdbe;
+    --dark-100: rgb(18, 18, 18);
+    --dark-200: rgb(51, 51, 51);
+}
