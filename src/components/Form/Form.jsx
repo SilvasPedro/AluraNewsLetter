@@ -9,10 +9,10 @@ const Form = ({ onSubmit }) => {
     onSubmit({ name, email })
   }
 
-  return <form onSubmit={enviarDados} className="flex flex-col h-full justify-center items-center -mt-20 gap-10">
+  return <form onSubmit={enviarDados} className="flex flex-col h-full justify-center items-center -mt-20 gap-10 px-5">
     <Input type="text" placeholder="Insira o seu nome..." required/>
     <Input type="text" placeholder="Insira o seu nome..." required/>
-    <button type="submit" className="bg-blue-700 py-2 px-5 rounded-full cursor-pointer">Seguir</button>
+    <button type="submit" className="bg-blue-700 py-2 px-5 rounded-full cursor-pointer w-full max-w-xs shadow-md dark:shadow-gray-800 hover:animate-pulse">Seguir</button>
   </form>
 }
 
