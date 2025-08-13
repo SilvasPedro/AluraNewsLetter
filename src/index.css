@@ -10,3 +10,13 @@
     --dark-100: rgb(18, 18, 18);
     --dark-200: rgb(51, 51, 51);
 }
+
+@layer components {
+    .btn-primario {
+        @apply bg-(var:--alura-verde) text-(var:--alura-escuro) py-1.5 rounded-md cursor-pointer w-full max-w-2xs shadow-md dark:shadow-gray-800 hover:animate-pulse;
+    }
+
+    .input {
+        @apply dark:bg-(var:--alura-claro) bg-(var:--alura-medio) outline-none rounded-md px-2 py-1 text-white dark:text-(var:--alura-escuro) placeholder:uppercase placeholder:text-xs w-full max-w-xl focus:border-2 focus:border-(var:--alura-verde);
+    }
+}

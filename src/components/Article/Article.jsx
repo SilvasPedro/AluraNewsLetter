@@ -5,7 +5,7 @@ const Article = ({ title, text, tags, image, alt }) => {
             <h3 className="text-xl font-bold ">{title}</h3>
             <div className="w-full justify-start gap-3 hidden sm:flex"> 
                 {
-                    tags.map((tag) => <span key={tag} className="bg-blue-600 dark:bg-(var:--alura-medio) text-white dark:text-gray-200 rounded-sm px-2 py-1 font-semibold uppercase text-xs my-1">{tag}</span>)
+                    tags.map((tag) => <span key={tag} className="bg-blue-600 dark:bg-(var:--alura-medio) text-white dark:text-gray-200 rounded-sm px-2 py-1 font-semibold uppercase text-xs my-1 hover:bg-(var:--alura-escuro) hover:scale-110 transition-all ">{tag}</span>)
                 }
             </div>
             <div className="grid gap-2">
